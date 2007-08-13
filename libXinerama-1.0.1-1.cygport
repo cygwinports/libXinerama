@@ -1,4 +1,3 @@
-XORG_RELEASE=X11R7.0
 inherit xorg
 
 PKG_NAMES="${PN} ${PN}1"
