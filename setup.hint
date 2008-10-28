@@ -1,4 +1,4 @@
 category: X11
 requires: cygwin libX11 libXext xineramaproto
-sdesc: "Xorg Xinerama library (development)"
-ldesc: "Xorg Xinerama library"
+sdesc: "X.Org Xinerama library (development)"
+ldesc: "X.Org Xinerama library"

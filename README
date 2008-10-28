@@ -1,6 +1,6 @@
 libXinerama
 ------------------------------------------
-Xorg Xinerama library
+X.Org Xinerama library
 
 Runtime requirements:
   cygwin-1.5.20-1
