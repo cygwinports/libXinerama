@@ -3,66 +3,71 @@ libXinerama
 X.Org Xinerama library
 
 Runtime requirements:
-  cygwin-1.5.20-1
-  libX11_6-1.0.0-2
-  libXext6-1.0.0-1
+  cygwin-1.5.25-15
+  libX11_6-1.1.5-2
+  libXext6-1.0.4-1
 
 Build requirements:
-  cygwin-1.5.20-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.2-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+(besides corresponding devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
   xineramaproto-1.1.2-1
-  xorg-util-macros-1.0.2-1
+  xorg-util-macros-1.1.6-1
 
 Canonical website:
   http://xorg.freedesktop.org/
 
 Canonical download:
-  http://xorg.freedesktop.org/releases/individual/
+  http://xorg.freedesktop.org/releases/individual/lib/
 
 -------------------------------------------
 
 Build instructions:
-  unpack libXinerama-1.0.1-X-src.tar.bz2
+  unpack libXinerama-1.0.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libXinerama-1.0.1-X.cygport all
+  cygport ./libXinerama-1.0.3-X.cygport all
 
 This will create:
-  /usr/src/libXinerama-1.0.1-X-src.tar.bz2
-  /usr/src/libXinerama-1.0.1-X.tar.bz2
-  /usr/src/libXinerama1-1.0.1-X.tar.bz2
+  /usr/src/libXinerama-1.0.3-X-src.tar.bz2
+  /usr/src/libXinerama-devel-1.0.3-X.tar.bz2
+  /usr/src/libXinerama1-1.0.3-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the main package:
 
+(libXinerama1)
+  /usr/bin/cygXinerama-1.dll
+  /usr/share/doc/libXinerama-1.0.3/COPYING
+  /usr/share/doc/libXinerama-1.0.3/ChangeLog
+
+(libXinerama-devel)
+  /usr/lib/libXinerama.a
   /usr/lib/libXinerama.dll.a
   /usr/lib/libXinerama.la
   /usr/lib/pkgconfig/xinerama.pc
-  /usr/share/doc/Cygwin/libXinerama-1.0.1.README
-  /usr/share/doc/libXinerama-1.0.1/COPYING
-  /usr/share/doc/libXinerama-1.0.1/ChangeLog
-
-Files included in the runtime library package:
-
-  /usr/bin/cygXinerama-1.dll
+  /usr/share/man/man3/Xinerama.3.gz
+  /usr/share/man/man3/XineramaIsActive.3.gz
+  /usr/share/man/man3/XineramaQueryExtension.3.gz
+  /usr/share/man/man3/XineramaQueryScreens.3.gz
+  /usr/share/man/man3/XineramaQueryVersion.3.gz
 
 ------------------
 
 Port Notes:
 
------ version 1.0.1-1 -----
-Initial Cygwin release of modular X11R7.0.
+----- version 1.0.3-1 -----
+Initial Cygwin release of modular X11.
 
 
 Cygwin port maintained by:
