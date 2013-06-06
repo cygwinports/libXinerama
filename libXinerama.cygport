@@ -1,12 +1,12 @@
 inherit xorg
 
 NAME="libXinerama"
-VERSION=1.1.2
+VERSION=1.1.3
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="X.Org Xinerama library"
 DESCRIPTION="X.Org Xinerama library"
 
-PKG_NAMES="${PN}1 ${PN}-devel"
+PKG_NAMES="${NAME}1 ${NAME}-devel"
 libXinerama1_CONTENTS="usr/bin/cygXinerama-1.dll usr/share/doc/"
 libXinerama_devel_CONTENTS="usr/include/ usr/lib/ usr/share/man/"
